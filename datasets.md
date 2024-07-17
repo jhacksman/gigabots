@@ -19,16 +19,18 @@ This document lists high-quality datasets suitable for training large language m
 - **Preprocessing**: May require filtering for specific languages or quality.
 
 ### Amazon Product Data
-- **Description**: Dataset containing product descriptions and reviews.
-- **Source**: [Amazon review data](https://registry.opendata.aws/amazon-reviews/)
-- **Size**: Over 35 GB for the complete dataset.
-- **Type**: Product descriptions, customer reviews.
-- **Preprocessing**: May need cleaning and formatting.
+- **Description**: Part of the fast.ai NLP datasets collection hosted on AWS. Includes both polarity and full versions of Amazon Reviews.
+- **Source**: [fast.ai Datasets](https://docs.fast.ai)
+- **AWS CLI Access**: `aws s3 ls --no-sign-request s3://fast-ai-nlp/`
+- **Size**: Varies by dataset. Polarity dataset is 493 MB compressed.
+- **Type**: Product reviews, sentiment analysis
+- **Preprocessing**: May need cleaning and formatting depending on the specific use case
+- **License**: Varies by dataset, check documentation for details
 
 ### Wikipedia Dump
 - **Description**: Comprehensive collection of Wikipedia articles.
 - **Source**: [Wikimedia Foundation](https://dumps.wikimedia.org/)
-- **Size**: Over 18 GB compressed (English Wikipedia).
+- **Size**: Over 18 GB compressed.
 - **Type**: Encyclopedic text.
 - **Preprocessing**: Requires parsing XML and extracting plain text.
 
